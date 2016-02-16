@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'devise'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
@@ -24,7 +26,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# gem 'bcrypt', '~> 3.1.10', require: false
+# if Bundler::Windows
+# 	gem 'bcrypt-ruby', '~> 3.0.0', require: false
+# else
+# 	gem 'bcrypt', '~> 3.1.10', require: false
+# end
 
 # Use Unicorn as the app server
 # gem 'unicorn'
